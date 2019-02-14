@@ -225,25 +225,62 @@
         margin-bottom: 50px;
         .owl {
           &-item {
-            float: none;
-            display: flex;
-            flex-shrink: 0;
-            justify-content: center;
-            align-items: center;
-  
-            img {
-              width: auto;
-              margin: 0 auto;
-            }
+            padding: 0 5px 0px;
           }
       
           &-nav {
             position: relative;
-            bottom: -20px;
+            bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+      
+          &-prev, &-next {
+            position: static;
+            transform: none;
+          }
+    
+          &-prev {
+            background-image: url('../img/arrow-left-orange.jpg') !important;
+        
+            &.disabled {
+              background-image: url('../img/arrow-left-min.jpg') !important;
+            }
+          }
+        
+          &-next {
+            background-image: url('../img/arrow-right-orange.jpg') !important;
+            
+            &.disabled {
+              background-image: url('../img/arrow-right-min.jpg') !important;
+            }
           }
         }
+        // .owl {
+        //   &-item {
+        //     float: none;
+        //     display: flex;
+        //     flex-shrink: 0;
+        //     justify-content: center;
+        //     align-items: center;
+  
+        //     img {
+        //       width: auto;
+        //       margin: 0 auto;
+        //     }
+        //   }
+      
+        //   &-nav {
+        //     position: relative;
+        //     bottom: -20px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //   }
+        // }
       }
 
       .function {
@@ -414,6 +451,12 @@
           &--2 {
             display: block;
           }
+          &--number {
+            display: block;
+          }
+        }
+        &__number {
+          margin: 0 auto 15px 0;
         }
         &__block {
           &:first-child {
