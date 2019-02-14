@@ -32,7 +32,19 @@ $(document).ready(function () {
         $(this).removeClass('error');
       }
     });
+
+    $(".number input").mask("# ##0 тг.", {
+      reverse: true
+    });
   }
+
+  $(".number__increase, .number__decrease").click(function() {
+    var $input = $(this).siblings("input");
+    var val = +$input.cleanVal();
+    var step = $(this).hasClass("number__increase") ? 1 : -1;
+    val += step;
+    $input.val($input.masked(val));
+  });
 
   $wnd.scroll(function () { onscroll(); });
 
