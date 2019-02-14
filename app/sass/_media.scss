@@ -451,12 +451,6 @@
           &--2 {
             display: block;
           }
-          &--number {
-            display: block;
-          }
-        }
-        &__number {
-          margin: 0 auto 15px 0;
         }
         &__block {
           &:first-child {
@@ -676,6 +670,19 @@
       &-text {
         font-size: 16px;
         margin-bottom: 40px;
+      }
+    }
+
+    &-quiz {
+      .question {
+        &__variants {
+          &--number {
+            display: block;
+          }
+        }
+        &__number {
+          margin: 0 auto 15px 0;
+        }
       }
     }
   }

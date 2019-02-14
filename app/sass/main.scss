@@ -1098,6 +1098,7 @@
         border: 1px solid #000000;
         background-color: transparent;
         margin-left: 10px;
+        text-align: center;
         &__title {
           display: inline;
         }
@@ -1106,7 +1107,7 @@
 
     &__block {
       &:first-child {
-        margin-right: 30px;
+        margin-right: 50px;
       }
     }
 
