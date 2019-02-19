@@ -257,6 +257,25 @@ $(document).on('closing', '.question-modal', function (e) {
     .removeClass('d-none');
 });
 
+  var $instagram = $('.carousel-instagram');
+  $.get('/instagram.php', function(data) {
+    $instagram.html(data);
+    $instagram.owlCarousel({
+      loop: false,
+      nav: false,
+      dots: true,
+      mouseDrag: false,
+      smartSpeed: 500,
+      margin: 15,
+      navText: ['', ''],
+      responsive: {
+        0: { items: 1, mouseDrag: false },
+        576: { items: 1, mouseDrag: true },
+        768: { items: 2 },
+      }
+    }); 
+  });
+
   $(".carousel-design").owlCarousel({
     loop: false,
     dots: true,
