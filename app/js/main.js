@@ -262,8 +262,8 @@ $(document).on('closing', '.question-modal', function (e) {
     $instagram.html(data);
     $instagram.owlCarousel({
       loop: false,
-      nav: false,
-      dots: true,
+      nav: true,
+      dots: false,
       mouseDrag: false,
       smartSpeed: 500,
       margin: 15,

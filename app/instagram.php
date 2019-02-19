@@ -23,9 +23,9 @@ function rudr_instagram_api_curl_connect( $api_url ){
 function getInstagramPhotos() {
     $access_token = '1716945233.b4b3640.430ddf47b99c4769bc9cd0e885207e74';
     $username = 'whitecube.kz';
-    $tagname = '';
-    $user_photos = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/users/self/media/recent/?access_token=" . $access_token);
-    // $user_photos = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/tags/".$tagname."/media/recent?access_token=" . $access_token);
+    $tagname = 'furniture';
+    // $user_photos = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/users/self/media/recent/?access_token=" . $access_token);
+    $user_photos = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/tags/".$tagname."/media/recent?access_token=" . $access_token);
 
     $html = '';
     foreach ($user_photos->data as $post) {

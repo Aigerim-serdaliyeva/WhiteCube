@@ -864,6 +864,10 @@
         background-color: $accent;
       }
     }
+
+    &__contents {
+      flex-grow: 1;
+    }
     
     &__content {
       display: none;
@@ -913,6 +917,43 @@
     justify-content: space-between;
     max-width: 1090px;
     margin: 0 auto;
+  }
+
+  .owl {
+    &-item {
+      padding: 0 5px 0px;
+    }
+
+    &-nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 110px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    &-prev, &-next {
+      position: static;
+      transform: none;
+    }
+
+    &-prev {
+      background-image: url('../img/arrow-left-orange.jpg') !important;
+  
+      &.disabled {
+        background-image: url('../img/arrow-left-min.jpg') !important;
+      }
+    }
+  
+    &-next {
+      background-image: url('../img/arrow-right-orange.jpg') !important;
+      
+      &.disabled {
+        background-image: url('../img/arrow-right-min.jpg') !important;
+      }
+    }
   }
 }
 
@@ -997,6 +1038,9 @@
 
   .map {
     margin-left: 30px;
+    iframe {
+      width: 100% !important;
+    }
   }
 }
 
