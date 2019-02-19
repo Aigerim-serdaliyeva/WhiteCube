@@ -272,6 +272,7 @@ $(document).on('closing', '.question-modal', function (e) {
         0: { items: 1, mouseDrag: false },
         576: { items: 1, mouseDrag: true },
         768: { items: 2 },
+        992: { items: 3 },
       }
     }); 
   });
