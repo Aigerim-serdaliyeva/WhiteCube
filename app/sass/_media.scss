@@ -660,6 +660,15 @@
       
     }
 
+    &-contact {
+      .contact {
+        a {
+          max-width: 300px;
+          width: 100%;
+        }
+      }
+    }
+
     &-thanks {
       padding: 150px 0 50px;
       
