@@ -167,7 +167,11 @@
                     <span>Свой вариант</span>
                     <input type="text" name="Ответ1_текст" placeholder="Введите текст" class="ukazat">                  
                   </label>
-                  <div class="upload__text">или <a href="#" upload class="upload"> Загрузите фото понравившейся кухни</a></div>                
+                  <label class="custom-file">
+                    <input type="file" name="file" onchange="handleFiles(this)">
+                    <span title="" data-default="Прикрепить"> <span>или</span> Загрузите фото понравившейся кухни</span>
+                  </label>
+                  <!-- <div class="upload__text">или <a href="#" upload class="upload"> Загрузите фото понравившейся кухни</a></div>                 -->
                 </div>
                 <div class="question__error"></div>
                 <div class="question__button">

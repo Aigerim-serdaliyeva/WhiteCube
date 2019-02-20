@@ -925,13 +925,13 @@
     }
 
     &-nav {
-      position: absolute;
+      position: relative;
       left: 50%;
       transform: translateX(-50%);
       width: 110px;
       display: flex;
       justify-content: space-between;
-      margin-top: 20px;
+      margin: 20px 0 0;
     }
 
     &-prev, &-next {

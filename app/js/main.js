@@ -172,6 +172,22 @@ $(document).ready(function () {
     }
   });
 
+  
+function handleFiles(fileInput) {
+	var span = fileInput.nextElementSibling;
+  var files = fileInput.files;
+  var defaultText = span.getAttribute('data-default');
+  
+  if (files.length > 0) {
+  	span.innerHTML = files[0].name;
+    span.setAttribute('title', files[0].name);
+  } else {
+  	span.innerHTML = defaultText;
+    span.setAttribute('title', '');
+  }
+}
+
+
   $("[data-remodal-info]").click(function() {
     var target = $(this).data('remodal-target');
     var json = $(this).data('remodal-info');
