@@ -546,6 +546,13 @@
 
     &-company {
 
+      &__text {
+        display: none;
+        &__mob {
+          display: block;
+        }
+      }
+
       .carousel-company2 {
         display: block;
       }
