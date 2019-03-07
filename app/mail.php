@@ -42,6 +42,12 @@ if(isset($_POST["info"])) {
 
   mail($admin_email, adopt($form_subject), $message, $headers);
 
-  header("Location: /thanks.html");
+  if($_POST["info"] == "Quiz") {
+    header("Location: /quiz-thanks.html");
+  } else {
+    header("Location: /thanks.html");
+  }
   
 } 
+
+

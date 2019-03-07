@@ -142,6 +142,7 @@ $(document).ready(function () {
     var $form = $(this).closest('form');
     var $requireds = $form.find(':required');
     var formValid = true;
+    
 
     // проверяем объязательные (required) поля этой формы
     $requireds.each(function () {

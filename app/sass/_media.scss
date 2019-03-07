@@ -26,6 +26,10 @@
       display: none;
     }
 
+    &__main {
+      margin-left: 0;
+    }
+
     &__aside {
       max-width: 150px;
       margin: 0 50px 0 auto;
@@ -34,6 +38,7 @@
     .logo {
       left: 0;
       transform: none;
+      position: relative;
     }
   }
 
@@ -260,27 +265,6 @@
             }
           }
         }
-        // .owl {
-        //   &-item {
-        //     float: none;
-        //     display: flex;
-        //     flex-shrink: 0;
-        //     justify-content: center;
-        //     align-items: center;
-  
-        //     img {
-        //       width: auto;
-        //       margin: 0 auto;
-        //     }
-        //   }
-      
-        //   &-nav {
-        //     position: relative;
-        //     bottom: -20px;
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        //   }
-        // }
       }
 
       .function {
@@ -607,6 +591,11 @@
     display: inline;
   }
 
+  .custom-file {
+    margin-left: 10px; 
+    font-size: 13px;  
+  }
+
   .page-top {
     bottom: 70px;
   }
@@ -702,7 +691,7 @@
         }
         &__number {
           margin: 0 auto 15px 0;
-        }
+        }        
       }
     }
 

@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body id="main-page">
+<body id="question-page">
 
   <div class="page-wrapper">
 
@@ -75,7 +75,8 @@
             </nav>
           </div>   
           
-          <img class="logo" src="./img/logo.png" alt="">
+          <a href="/"><img class="logo" src="./img/logo.png" alt=""></a>
+          <div class="d-sm-none flex-grow-1"></div>
 
           <div class="header__aside">
             <div class="header__phone">
@@ -96,409 +97,416 @@
       </div>
     </header>
 
-    <section class="section s-quiz s-quiz--1 d-none" id="question-1">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question" >
-              <div class="question__title">Пройдите тест <br>
-                и узнайте стоимость кухни Вашей мечты</div>
-              <div class="question__error"></div>
-              <a href="#" class="perehod button" data-show="question-2" data-hide="question-1">Начать</a>
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
+    <form action="/mail.php" method="post">
+      <input type="hidden" name="info" value="Quiz">
 
-    <section class="section s-quiz s-quiz--2 d-none" id="question-2">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">1 / 6</div>
-              <div class="question__text">Выберите стиль кухни</div>
-              <input type="hidden" name="Вопрос1" value="Выберите стиль кухни">
-              <div class="question__variants">
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ1" value="Классика">
-                    <span></span>           
-                  </span>
-                  <span>Классика</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ1" value="Модерн">
-                    <span></span>
-                  </span>
-                  <span>Модерн</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ1" value="Хай-тек">
-                    <span></span>
-                  </span>
-                  <span>Хай-тек</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ1" value="Минимализм">
-                    <span></span>
-                  </span>
-                  <span>Минимализм</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ1" value="Прованс">
-                    <span></span>
-                  </span>
-                  <span>Прованс</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ1" value="Свой вариант" class="drugoe">
-                    <span></span>
-                  </span>
-                  <span>Свой вариант</span>
-                  <input type="text" name="Ответ1_текст" placeholder="Введите текст" class="ukazat">                  
-                </label>
-                <div class="upload__text">или <a href="#" upload class="upload"> Загрузите фото понравившейся кухни</a></div>                
-              </div>
-              <div class="question__error"></div>
-              <div class="question__button">
-                <a href="#" class="perehod button" data-show="question-3" data-hide="question-2">Дальше</a>
-              </div>              
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
+      <section class="section s-quiz s-quiz--1" id="question-1">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question" >
+                <div class="question__title">Пройдите тест <br>
+                  и узнайте стоимость кухни Вашей мечты</div>
+                <div class="question__error"></div>
+                <a href="#" class="perehod button" data-show="question-2" data-hide="question-1">Начать</a>
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
 
-    <section class="section s-quiz s-quiz--3 d-none" id="question-3">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">2 / 6</div>
-              <div class="question__text">Выберите форму кухни</div>
-              <input type="hidden" name="Вопрос1" value="Выберите форму кухни">
-              <div class="question__variants">
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ2" value="Прямая">
-                    <span></span>           
-                  </span>
-                  <span>Прямая</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ2" value="Угловая">
-                    <span></span>           
-                  </span>
-                  <span>Угловая</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ2" value="П-образная">
-                    <span></span>           
-                  </span>
-                  <span>П-образная</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ2" value="С островком">
-                    <span></span>           
-                  </span>
-                  <span>С островком</span>
-                </label>
-                <label class="label">
-                  <span class="checkbox checkbox--circle">
-                    <input type="radio" name="Ответ2" value="Другое" class="drugoe">
-                    <span></span>
-                  </span>
-                  <span>Другое</span>
-                  <!-- <input type="text" name="Ответ2_текст" placeholder="Введите текст" class="ukazat">                   -->
-                </label>         
-              </div>
-              <div class="question__error"></div>
-              <div class="question__button">
-                <a href="#" class="perehod button" data-show="question-4" data-hide="question-3">Дальше</a>
-              </div>              
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <section class="section s-quiz s-quiz--4 d-none" id="question-4">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">3 / 6</div>
-              <div class="question__text">Выберите материалы</div>
-              <input type="hidden" name="Вопрос1" value="Выберите материалы">
-              <div class="question__info">(Выберите один и более вариантов)</div>
-              <div class="question__variants question__variants--2">
-                <div class="question__block">
+      <section class="section s-quiz s-quiz--2 d-none" id="question-2">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">1 / 6</div>
+                <div class="question__text">Выберите стиль кухни</div>
+                <input type="hidden" name="Вопрос1" value="Выберите стиль кухни">
+                <div class="question__variants">
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="ЛДСП">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ1" value="Классика">
                       <span></span>           
                     </span>
-                    <span>ЛДСП</span>
+                    <span>Классика</span>
                   </label>
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="Краска">
-                      <span></span>           
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ1" value="Модерн">
+                      <span></span>
                     </span>
-                    <span>Краска</span>
+                    <span>Модерн</span>
                   </label>
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="МДФ шпон">
-                      <span></span>           
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ1" value="Хай-тек">
+                      <span></span>
                     </span>
-                    <span>МДФ шпон</span>
+                    <span>Хай-тек</span>
                   </label>
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="МДФ под шпон">
-                      <span></span>           
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ1" value="Минимализм">
+                      <span></span>
                     </span>
-                    <span>МДФ под шпон</span>
+                    <span>Минимализм</span>
                   </label>
+                  <label class="label">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ1" value="Прованс">
+                      <span></span>
+                    </span>
+                    <span>Прованс</span>
+                  </label>
+                  <label class="label">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ1" value="Свой вариант" class="drugoe">
+                      <span></span>
+                    </span>
+                    <span>Свой вариант</span>
+                    <input type="text" name="Ответ1_текст" placeholder="Введите текст" class="ukazat">                  
+                  </label>
+                  <label class="custom-file">
+                    <input type="file" name="file" onchange="handleFiles(this)">
+                    <span title="" data-default="Прикрепить"> <span>или</span> Загрузите фото понравившейся кухни</span>
+                  </label>
+                  <!-- <div class="upload__text">или <a href="#" upload class="upload"> Загрузите фото понравившейся кухни</a></div>                 -->
                 </div>
-                <div class="question__block">
+                <div class="question__error"></div>
+                <div class="question__button">
+                  <a href="#" class="perehod button" data-show="question-3" data-hide="question-2">Дальше</a>
+                </div>              
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section class="section s-quiz s-quiz--3 d-none" id="question-3">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">2 / 6</div>
+                <div class="question__text">Выберите форму кухни</div>
+                <input type="hidden" name="Вопрос2" value="Выберите форму кухни">
+                <div class="question__variants">
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="Массив">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ2" value="Прямая">
                       <span></span>           
                     </span>
-                    <span>Массив</span>
+                    <span>Прямая</span>
                   </label>
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="Камень">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ2" value="Угловая">
                       <span></span>           
                     </span>
-                    <span>Камень</span>
+                    <span>Угловая</span>
                   </label>
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="Акрил">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ2" value="П-образная">
                       <span></span>           
                     </span>
-                    <span>Акрил</span>
+                    <span>П-образная</span>
                   </label>
                   <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="checkbox" name="Ответ3[]" value="Другое" class="drugoe">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ2" value="С островком">
+                      <span></span>           
+                    </span>
+                    <span>С островком</span>
+                  </label>
+                  <label class="label">
+                    <span class="checkbox checkbox--circle">
+                      <input type="radio" name="Ответ2" value="Другое" >
                       <span></span>
                     </span>
                     <span>Другое</span>
-                    <!-- <input type="text" name="Ответ3[]" placeholder="Введите текст" class="ukazat">                   -->
-                  </label> 
-                </div>     
-              </div>
-              <div class="question__error"></div>
-              <div class="question__button">
-                <a href="#" class="perehod button" data-show="question-5" data-hide="question-4">Дальше</a>
-              </div>              
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <section class="section s-quiz s-quiz--5 d-none" id="question-5">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">4 / 6</div>
-              <div class="question__text">Статус готовности Вашего помещения</div>
-              <input type="hidden" name="Вопрос1" value="Статус готовности Вашего помещения">
-              <div class="question__variants">
-                <label class="label">
-                  <span class="checkbox checkbox--image">
-                    <input type="radio" name="Ответ4[]" value="Идет ремонт">
-                    <span></span>           
-                  </span>
-                  <span>Идет ремонт</span>
-                </label>   
-                <label class="label">
-                  <span class="checkbox checkbox--image">
-                    <input type="radio" name="Ответ4[]" value="Черновая отделка кухни">
-                    <span></span>           
-                  </span>
-                  <span>Черновая отделка кухни</span>
-                </label>   
-                <label class="label">
-                  <span class="checkbox checkbox--image">
-                    <input type="radio" name="Ответ4[]" value="Ремонт уже готов, осталось поставить мебель">
-                    <span></span>           
-                  </span>
-                  <span>Ремонт уже готов, осталось поставить мебель</span>
-                </label>           
-              </div>
-              <div class="question__error"></div>
-              <div class="question__button">
-                <a href="#" class="perehod button" data-show="question-6" data-hide="question-5">Дальше</a>
-              </div>              
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <section class="section s-quiz s-quiz--6 d-none" id="question-6">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">5 / 6</div>
-              <div class="question__text">Укажите бюджет</div>
-              <input type="hidden" name="Вопрос1" value="Укажите бюджет">
-              <div class="question__variants">
-                           
-              </div>
-              <div class="question__error"></div>
-              <div class="question__button">
-                <a href="#" class="perehod button" data-show="question-7" data-hide="question-6">Дальше</a>
-              </div>              
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <section class="section s-quiz s-quiz--7 d-none" id="question-7">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">6 / 6</div>
-              <div class="question__text">Что хотите заказать помимо мебели на кухню?</div>
-              <input type="hidden" name="Вопрос5" value="Что хотите заказать помимо мебели на кухню?">
-              <div class="question__variants question__variants--2">
-                <div class="question__block">
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Мебель в прихожую">
-                      <span></span>           
-                    </span>
-                    <span>Мебель в прихожую</span>
-                  </label>
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Мебель в спальню">
-                      <span></span>           
-                    </span>
-                    <span>Мебель в спальню</span>
-                  </label>
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Мебель в гостиную">
-                      <span></span>           
-                    </span>
-                    <span>Мебель в гостиную</span>
-                  </label>
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Мебель в ванную">
-                      <span></span>           
-                    </span>
-                    <span>Мебель в ванную</span>
-                  </label>
+                    <!-- <input type="text" name="Ответ2_текст" placeholder="Введите текст" class="ukazat">                   -->
+                  </label>         
                 </div>
-                <div class="question__block">                  
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Мебель в детскую">
-                      <span></span>           
-                    </span>
-                    <span>Мебель в детскую</span>
-                  </label>
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Другую мебель" class="drugoe">
-                      <span></span>
-                    </span>
-                    <span>Другую мебель</span>
-                    <input type="text" name="Ответ6[]" placeholder="Введите текст" class="ukazat">                  
-                  </label> 
-                  <label class="label">
-                    <span class="checkbox checkbox--image">
-                      <input type="radio" name="Ответ6[]" value="Пока не планирую">
-                      <span></span>           
-                    </span>
-                    <span>Пока не планирую</span>
-                  </label>
-                </div>     
-              </div>
-              <div class="question__error"></div>
-              <div class="question__button">
-                <a href="#" class="perehod button" data-show="question-8" data-hide="question-7">Завершить</a>
-              </div>              
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
+                <div class="question__error"></div>
+                <div class="question__button">
+                  <a href="#" class="perehod button" data-show="question-4" data-hide="question-3">Дальше</a>
+                </div>              
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
 
-    <section class="section s-quiz s-quiz--8 d-none" id="question-8">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question">
-              <div class="question__num">Последний этап</div>
-              <div class="question__text">Введите контактные данные</div>
-
-              <div class="form form--vertical">
-                <form action="/mail.php" method="post">
-                  <div class="form__content">
-                    <input type="hidden" name="info" value="Введите контактные данные">
-      
-                    <div class="input-div">
-                      <input type="text" class="input" name="name" placeholder="Ваше имя">
-                    </div>
-      
-                    <div class="input-div">
-                      <input type="tel" class="input" name="phone" placeholder="Телефон*" required minlength="10">
-                      <span class="error-message">Заполните это поле</span>
-                    </div>
-      
-                    <!-- <a href="#" class="perehod button" data-show="question-9" data-hide="question-8">Узнать стоимость</a> -->
-                    <button class="perehod button ajax-submit" type="submit" id="uznat_stoimost">Узнать стоимость</button>
-      
-                    <div class="form__info">* Ваши данные в безопасности
-                      и не буду переданы третьим лицам</div>
+      <section class="section s-quiz s-quiz--4 d-none" id="question-4">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">3 / 6</div>
+                <div class="question__text">Выберите материалы</div>
+                <input type="hidden" name="Вопрос3" value="Выберите материалы">
+                <div class="question__info">(Выберите один и более вариантов)</div>
+                <div class="question__variants question__variants--2">
+                  <div class="question__block">
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="ЛДСП">
+                        <span></span>           
+                      </span>
+                      <span>ЛДСП</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="Краска">
+                        <span></span>           
+                      </span>
+                      <span>Краска</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="МДФ шпон">
+                        <span></span>           
+                      </span>
+                      <span>МДФ шпон</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="МДФ под шпон">
+                        <span></span>           
+                      </span>
+                      <span>МДФ под шпон</span>
+                    </label>
                   </div>
-                </form>
-              </div>        
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
+                  <div class="question__block">
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="Массив">
+                        <span></span>           
+                      </span>
+                      <span>Массив</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="Камень">
+                        <span></span>           
+                      </span>
+                      <span>Камень</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="Акрил">
+                        <span></span>           
+                      </span>
+                      <span>Акрил</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="checkbox" name="Ответ3[]" value="Другое" >
+                        <span></span>
+                      </span>
+                      <span>Другое</span>
+                      <!-- <input type="text" name="Ответ3[]" placeholder="Введите текст" class="ukazat">                   -->
+                    </label> 
+                  </div>     
+                </div>
+                <div class="question__error"></div>
+                <div class="question__button">
+                  <a href="#" class="perehod button" data-show="question-5" data-hide="question-4">Дальше</a>
+                </div>              
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
 
-    <section class="section s-quiz s-quiz--1" id="question-9">
-      <div class="container">  
-        <div class="row">
-          <div class="col-lg-7 col-md-9 s-quiz__content">
-            <div class="question" >
-              <div class="question__title">Спасибо!</div>
-              <div class="question__text2">Наш менеджер уже обрабатывает Ваши ответы.</div>
-              <div class="question__text2">В течение 30 минут он свяжется с Вами!</div>
-              <a href="/"  class="question__link">Перейти на основной сайт</a>
-            </div>  
-          </div>
-        </div>  
-      </div>
-    </section>
+      <section class="section s-quiz s-quiz--5 d-none" id="question-5">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">4 / 6</div>
+                <div class="question__text">Статус готовности Вашего помещения</div>
+                <input type="hidden" name="Вопрос4" value="Статус готовности Вашего помещения">
+                <div class="question__variants">
+                  <label class="label">
+                    <span class="checkbox checkbox--image">
+                      <input type="radio" name="Ответ4[]" value="Идет ремонт">
+                      <span></span>           
+                    </span>
+                    <span>Идет ремонт</span>
+                  </label>   
+                  <label class="label">
+                    <span class="checkbox checkbox--image">
+                      <input type="radio" name="Ответ4[]" value="Черновая отделка кухни">
+                      <span></span>           
+                    </span>
+                    <span>Черновая отделка кухни</span>
+                  </label>   
+                  <label class="label">
+                    <span class="checkbox checkbox--image">
+                      <input type="radio" name="Ответ4[]" value="Ремонт уже готов, осталось поставить мебель">
+                      <span></span>           
+                    </span>
+                    <span>Ремонт уже готов, осталось поставить мебель</span>
+                  </label>           
+                </div>
+                <div class="question__error"></div>
+                <div class="question__button">
+                  <a href="#" class="perehod button" data-show="question-6" data-hide="question-5">Дальше</a>
+                </div>              
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section class="section s-quiz s-quiz--6 d-none" id="question-6">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">5 / 6</div>
+                <div class="question__text">Укажите бюджет</div>
+                <input type="hidden" name="Вопрос5" value="Укажите бюджет">
+                <div class="question__variants question__variants--number">
+                  <div class="question__number">         
+                    <div class="number__title">от</div>
+                    <div class="number">
+                      <input type="text" name="Ответ5_от" value="500000">
+                      <span class="number__increase"></span> 
+                      <span class="number__decrease"></span> 
+                    </div>   
+                  </div>
+                  <div class="question__number">         
+                    <div class="number__title">до</div>   
+                    <div class="number">
+                      <input type="text" name="Ответ5_до" value="6000000">
+                      <span class="number__increase"></span> 
+                      <span class="number__decrease"></span> 
+                    </div>
+                  </div>
+                </div>
+                <div class="question__error"></div>
+                <div class="question__button">
+                  <a href="#" class="perehod button" data-show="question-7" data-hide="question-6">Дальше</a>
+                </div>              
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section class="section s-quiz s-quiz--7 d-none" id="question-7">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">6 / 6</div>
+                <div class="question__text">Что хотите заказать помимо мебели на кухню?</div>
+                <input type="hidden" name="Вопрос6" value="Что хотите заказать помимо мебели на кухню?">
+                <div class="question__variants question__variants--2">
+                  <div class="question__block">
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Мебель в прихожую">
+                        <span></span>           
+                      </span>
+                      <span>Мебель в прихожую</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Мебель в спальню">
+                        <span></span>           
+                      </span>
+                      <span>Мебель в спальню</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Мебель в гостиную">
+                        <span></span>           
+                      </span>
+                      <span>Мебель в гостиную</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Мебель в ванную">
+                        <span></span>           
+                      </span>
+                      <span>Мебель в ванную</span>
+                    </label>
+                  </div>
+                  <div class="question__block">                  
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Мебель в детскую">
+                        <span></span>           
+                      </span>
+                      <span>Мебель в детскую</span>
+                    </label>
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Другую мебель" class="drugoe">
+                        <span></span>
+                      </span>
+                      <span>Другую мебель</span>
+                      <input type="text" name="Ответ6[]" placeholder="Введите текст" class="ukazat">                  
+                    </label> 
+                    <label class="label">
+                      <span class="checkbox checkbox--image">
+                        <input type="radio" name="Ответ6[]" value="Пока не планирую">
+                        <span></span>           
+                      </span>
+                      <span>Пока не планирую</span>
+                    </label>
+                  </div>     
+                </div>
+                <div class="question__error"></div>
+                <div class="question__button">
+                  <a href="#" class="perehod button" data-show="question-8" data-hide="question-7">Завершить</a>
+                </div>              
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section class="section s-quiz s-quiz--8 d-none" id="question-8">
+        <div class="container">  
+          <div class="row">
+            <div class="col-lg-7 col-md-9 s-quiz__content">
+              <div class="question">
+                <div class="question__num">Последний этап</div>
+                <div class="question__text">Введите контактные данные</div>
+
+                <div class="form form--vertical">
+                  
+                    <div class="form__content">
+        
+                      <div class="input-div">
+                        <input type="text" class="input" name="name" placeholder="Ваше имя">
+                      </div>
+        
+                      <div class="input-div">
+                        <input type="tel" class="input" name="phone" placeholder="Телефон*" required minlength="10">
+                        <span class="error-message">Заполните это поле</span>
+                      </div>
+        
+                      <!-- <a href="#" class="perehod button" data-show="question-9" data-hide="question-8">Узнать стоимость</a> -->
+                      <button class="button ajax-submit" type="submit" id="uznat_stoimost">Узнать стоимость</button>
+        
+                      <div class="form__info">* Ваши данные в безопасности
+                        и не буду переданы третьим лицам</div>
+                    </div>
+                </div>        
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section>
+
+    </form> 
 
     <footer class="footer inverse">
       <div class="container">
@@ -523,7 +531,7 @@
           <div class="footer__politika" data-remodal-target="politika">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
 
           <div class="footer__comand">Создано командой
-            <a href="//evodreammarketing.com" target="_blank"><img src="./img/evodream.png" alt="EvodreamMarketing"></a>
+            <a href="#"><img src="./img/evodream.png" alt="EvodreamMarketing"></a>
           </div>
         </div>
       </div>
